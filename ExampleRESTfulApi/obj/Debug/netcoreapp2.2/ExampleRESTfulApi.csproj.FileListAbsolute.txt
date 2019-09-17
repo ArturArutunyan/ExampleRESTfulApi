@@ -1,0 +1,17 @@
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\ExampleRESTfulApi.deps.json
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\ExampleRESTfulApi.runtimeconfig.json
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\ExampleRESTfulApi.runtimeconfig.dev.json
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\ExampleRESTfulApi.dll
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\ExampleRESTfulApi.pdb
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\DAL.dll
+D:\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.csprojAssemblyReference.cache
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.csproj.CoreCompileInputs.cache
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.RazorAssemblyInfo.cache
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.RazorAssemblyInfo.cs
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.AssemblyInfoInputs.cache
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.AssemblyInfo.cs
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.RazorTargetAssemblyInfo.cache
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.csproj.CopyComplete
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.dll
+D:\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.pdb

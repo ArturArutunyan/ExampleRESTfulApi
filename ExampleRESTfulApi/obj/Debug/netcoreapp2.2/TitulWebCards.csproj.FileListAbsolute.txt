@@ -1,0 +1,17 @@
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\TitulWebCards.deps.json
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\TitulWebCards.runtimeconfig.json
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\TitulWebCards.runtimeconfig.dev.json
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\TitulWebCards.dll
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\TitulWebCards.pdb
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.csproj.CoreCompileInputs.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.RazorAssemblyInfo.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.RazorAssemblyInfo.cs
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.AssemblyInfoInputs.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.AssemblyInfo.cs
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.RazorTargetAssemblyInfo.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.dll
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.pdb
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.csprojAssemblyReference.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\TitulWebCards\obj\Debug\netcoreapp2.2\TitulWebCards.csproj.CopyComplete

@@ -1,0 +1,17 @@
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+C:\Users\ArutyunyanAV\source\repos\TitulWebCards\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
