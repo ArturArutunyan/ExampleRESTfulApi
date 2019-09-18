@@ -6,6 +6,7 @@ using DAL.EF;
 using DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace TitulWebCards.Controllers
 {
@@ -21,9 +22,9 @@ namespace TitulWebCards.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<string> GetDocuments()
+        public string GetDocuments()
         {
-            return new[] { "value1", "value2" };
+            return "1";
         }
 
         [HttpGet("{id}", Name = "Get")]

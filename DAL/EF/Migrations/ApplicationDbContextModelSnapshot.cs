@@ -3,16 +3,14 @@ using DAL.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace DAL.Migrations
+namespace DAL.EF.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190917091138_IdentityMigration2")]
-    partial class IdentityMigration2
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,7 +18,7 @@ namespace DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DAL.Models.DocumentCard", b =>
+            modelBuilder.Entity("DAL.Models.ContractDocument", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,35 +27,37 @@ namespace DAL.Migrations
                     b.Property<string>("DocumentName")
                         .IsRequired();
 
+                    b.Property<string>("Title");
+
                     b.HasKey("Id");
 
-                    b.ToTable("DocumentCards");
+                    b.ToTable("ContractDocuments");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            DocumentName = "Main Document"
+                            DocumentName = "Contract Document"
                         });
                 });
 
-            modelBuilder.Entity("DAL.Models.DocumentCardRoles", b =>
+            modelBuilder.Entity("DAL.Models.DocumentContractRole", b =>
                 {
-                    b.Property<int>("DocumentCardId");
-
                     b.Property<int>("RoleId");
 
-                    b.HasKey("DocumentCardId", "RoleId");
+                    b.Property<int>("ContractDocumentId");
 
-                    b.HasIndex("RoleId");
+                    b.HasKey("RoleId", "ContractDocumentId");
 
-                    b.ToTable("DocumentCardRoles");
+                    b.HasIndex("ContractDocumentId");
+
+                    b.ToTable("DocumentContractRole");
 
                     b.HasData(
                         new
                         {
-                            DocumentCardId = 1,
-                            RoleId = 1
+                            RoleId = 1,
+                            ContractDocumentId = 1
                         });
                 });
 
@@ -127,13 +127,15 @@ namespace DAL.Migrations
                 {
                     b.Property<int>("UserId");
 
-                    b.Property<int>("RoleId");
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue(2);
 
                     b.HasKey("UserId", "RoleId");
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("UserRole");
 
                     b.HasData(
                         new
@@ -145,18 +147,28 @@ namespace DAL.Migrations
                         {
                             UserId = 2,
                             RoleId = 2
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            UserId = 4,
+                            RoleId = 2
                         });
                 });
 
-            modelBuilder.Entity("DAL.Models.DocumentCardRoles", b =>
+            modelBuilder.Entity("DAL.Models.DocumentContractRole", b =>
                 {
-                    b.HasOne("DAL.Models.DocumentCard", "DocumentCard")
-                        .WithMany("DocumentCardRoles")
-                        .HasForeignKey("DocumentCardId")
+                    b.HasOne("DAL.Models.ContractDocument", "ContractDocument")
+                        .WithMany("DocumentRoles")
+                        .HasForeignKey("ContractDocumentId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("DAL.Models.Role", "Role")
-                        .WithMany("DocumentCardRoles")
+                        .WithMany("DocumentRoles")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

@@ -13104,11 +13104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ExampleRESTfulApi\\ExampleRESTfulApi\\ExampleRESTfulApi.csproj",
+      "projectUniqueName": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\ExampleRESTfulApi\\ExampleRESTfulApi.csproj",
       "projectName": "ExampleRESTfulApi",
-      "projectPath": "D:\\ExampleRESTfulApi\\ExampleRESTfulApi\\ExampleRESTfulApi.csproj",
+      "projectPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\ExampleRESTfulApi\\ExampleRESTfulApi.csproj",
       "packagesPath": "C:\\Users\\ArutyunyanAV\\.nuget\\packages\\",
-      "outputPath": "D:\\ExampleRESTfulApi\\ExampleRESTfulApi\\obj\\",
+      "outputPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\ExampleRESTfulApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13127,8 +13127,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\ExampleRESTfulApi\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\ExampleRESTfulApi\\DAL\\DAL.csproj"
+            "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\DAL.csproj"
             }
           }
         }

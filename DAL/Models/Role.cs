@@ -7,7 +7,7 @@ namespace DAL.Models
         public int Id { get; set; }
         public string RoleName { get; set; }
 
-        public List<UserRole> UserRoles { get; set; } // Many-to-many with User
-        public List<DocumentCardRoles> DocumentCardRoles { get; set; } // Many-to-many with DocumentCard
+        public IEnumerable<UserRole> UserRoles { get; set; }
+        public IEnumerable<DocumentContractRole> DocumentContractRoles { get; set; }
     }
 }

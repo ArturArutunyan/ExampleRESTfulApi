@@ -1,6 +1,7 @@
 ﻿/// Hints
-/// add-migration name -o DAO/Portal/EF/Migrations
+/// add-migration name -outputdir "C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\EF\Migrations"
 
+using DAL.Enums;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -13,9 +14,7 @@ namespace DAL.EF
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }
-        public DbSet<DocumentCard> Cards { get; set; }
-        public DbSet<DocumentCardRoles> DocumentCardRoles { get; set; }
+        public DbSet<ContractDocument> ContractDocuments { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -58,62 +57,87 @@ namespace DAL.EF
     {
         internal static void IdentityBuild(this ModelBuilder builder)
         {
-            builder.Entity<User>().Property(u => u.UserName).IsRequired();
-            builder.Entity<User>().HasData(
-                new User[]
-                {
-                    new User() { Id = 1, UserName = "Artur" },
-                    new User() { Id = 2, UserName = "Igor" },
-                    new User() { Id = 3, UserName = "Lena" },
-                    new User() { Id = 4, UserName = "Vladimir" }
-                });
 
+            #region Data for init
 
-            builder.Entity<Role>().Property(r => r.RoleName).IsRequired();
-            builder.Entity<Role>().HasData(
-                new Role[]
+            var users = new User[]
+                    {
+                        new User() { Id = 1, UserName = "Artur" },
+                        new User() { Id = 2, UserName = "Igor" },
+                        new User() { Id = 3, UserName = "Lena" },
+                        new User() { Id = 4, UserName = "Vladimir" }
+                    };
+            var roles = new Role[]
                 {
                     new Role() { Id = 1, RoleName = "Admin" },
                     new Role() { Id = 2, RoleName = "User" }
-                });
-            //builder.Entity<UserRole>().Property(u => u.RoleId).HasDefaultValue(2); // just user
+                };
+            var contractDocument = new ContractDocument[]
+                {
+                    new ContractDocument() { Id = 1, DocumentName = "Contract Document" }
+                };
+            var userRoles = new UserRole[]
+                    {
+                        new UserRole() { UserId = users[0].Id, RoleId = roles[0].Id },
+                        new UserRole() { UserId = users[1].Id, RoleId = roles[1].Id },
+                        new UserRole() { UserId = users[2].Id, RoleId = roles[1].Id },
+                        new UserRole() { UserId = users[3].Id, RoleId = roles[1].Id },
+                    };
+
+            var documentContractRoles = new DocumentContractRole[]
+                {
+                    new DocumentContractRole() { RoleId = roles[0].Id, ContractDocumentId = contractDocument[0].Id }
+                };
+
+            #endregion
+
+            #region Building identity entities
+
+            builder.Entity<User>().Property(u => u.UserName).IsRequired();
+            builder.Entity<User>().HasData(users);
 
 
-            builder.Entity<UserRole>().HasKey(k => new { k.UserId, k.RoleId });
+            builder.Entity<Role>().Property(r => r.RoleName).IsRequired();
+            builder.Entity<Role>().HasData(roles);
+
+
+            builder.Entity<ContractDocument>().Property(c => c.DocumentName).IsRequired();
+            builder.Entity<ContractDocument>().HasData(contractDocument);
+
+
+            // Many-to-many: User <---> Role
+            builder.Entity<UserRole>().HasKey(ur => new { ur.UserId, ur.RoleId });
 
             builder.Entity<UserRole>()
-                .HasOne(u => u.User)
+                .HasOne(ur => ur.User)
                 .WithMany(u => u.UserRoles)
-                .HasForeignKey(u => u.UserId);
+                .HasForeignKey(ur => ur.UserId);
 
             builder.Entity<UserRole>()
-                .HasOne(r => r.Role)
+                .HasOne(ur => ur.Role)
                 .WithMany(r => r.UserRoles)
-                .HasForeignKey(r => r.RoleId);
+                .HasForeignKey(ur => ur.RoleId);
 
-            builder.Entity<UserRole>().HasData(
-                new UserRole[]
-                {
-                    new UserRole() { UserId = 1, RoleId = 1 },
-                    new UserRole() { UserId = 2, RoleId = 2 }
-                });
+            builder.Entity<UserRole>().HasData(userRoles);
+            builder.Entity<UserRole>().Property(ur => ur.RoleId).HasDefaultValue(Roles.User);
+            //----------------------------------------------------------------------
 
 
-            builder.Entity<DocumentCard>().ToTable("DocumentCards");
-            builder.Entity<DocumentCard>().Property(c => c.DocumentName).IsRequired();
-            builder.Entity<DocumentCard>().HasData(
-                new DocumentCard[]
-                {
-                    new DocumentCard() { Id = 1, DocumentName = "Main Document" }
-                });
+            //// Many-to-many: Role <---> DocumentContract 
+            builder.Entity<DocumentContractRole>().HasKey(dr => new { dr.RoleId, dr.ContractDocumentId });
 
+            builder.Entity<DocumentContractRole>()
+                .HasOne(dr => dr.Role)
+                .WithMany(r => r.DocumentContractRoles)
+                .HasForeignKey(dr => dr.RoleId);
 
-            builder.Entity<DocumentCardRoles>().HasKey(k => new { k.DocumentCardId, k.RoleId });
-            builder.Entity<DocumentCardRoles>().HasData(
-                new DocumentCardRoles[]
-                {
-                    new DocumentCardRoles() { RoleId = 1, DocumentCardId = 1 }
-                });
+            builder.Entity<DocumentContractRole>()
+                .HasOne(dr => dr.ContractDocument)
+                .WithMany(d => d.DocumentRoles)
+                .HasForeignKey(dr => dr.ContractDocumentId);
+
+            builder.Entity<DocumentContractRole>().HasData(documentContractRoles);
+            #endregion
         }
     }
 }

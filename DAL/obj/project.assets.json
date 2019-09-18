@@ -3639,11 +3639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ExampleRESTfulApi\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\ExampleRESTfulApi\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\ArutyunyanAV\\.nuget\\packages\\",
-      "outputPath": "D:\\ExampleRESTfulApi\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
