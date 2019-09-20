@@ -24,7 +24,7 @@ namespace TitulWebCards.Controllers
         [HttpGet]
         public string GetDocuments()
         {
-            return "1";
+            return "d";
         }
 
         [HttpGet("{id}", Name = "Get")]

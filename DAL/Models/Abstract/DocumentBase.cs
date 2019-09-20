@@ -6,7 +6,7 @@ namespace DAL.Models
     /// Абстрактный класс реализующий базовый функционал документа
     /// </summary>
     /// <typeparam name="TDocumentEntityRole">Класс связующий тип конкретного документа с ролью (many-to-many)</typeparam>
-    public abstract class DocumentBase<TDocumentEntityRole> where TDocumentEntityRole : class, new()
+    public abstract class DocumentBase<TDocumentEntityRole> where TDocumentEntityRole : IDocumentRole, new()
     {
         public int Id { get; set; }
         public string Title { get; set; }

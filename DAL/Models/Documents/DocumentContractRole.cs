@@ -1,6 +1,6 @@
 ﻿namespace DAL.Models
 {
-    public class DocumentContractRole
+    public class DocumentContractRole : IDocumentRole
     {
         public int RoleId { get; set; }
         public Role Role { get; set; }
