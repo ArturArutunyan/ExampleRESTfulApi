@@ -32,3 +32,5 @@ C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.csproj.CopyComplete
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.dll
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.pdb
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\BLL.dll
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\BLL.pdb

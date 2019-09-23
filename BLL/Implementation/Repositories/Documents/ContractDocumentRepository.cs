@@ -1,12 +1,9 @@
-﻿using BLL.Interfaces;
-using BLL.Interfaces.Documents;
+﻿using BLL.Interfaces.Documents;
 using DAL.EF;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace BLL.Implementation
@@ -39,13 +36,23 @@ namespace BLL.Implementation
             }
         }
 
-        public async Task<ContractDocument> Get(int id)
+        public async Task<ContractDocument> Get(int id, bool includeRoles = false)
         {
+            if (includeRoles)
+                _dbSet.Include(d => d.DocumentRoles)
+                    .ThenInclude(d => d.Role)
+                    .AsNoTracking();
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<ContractDocument>> GetAll()
+        public async Task<IEnumerable<ContractDocument>> GetAll(bool includeRoles = false, bool sorted = false)
         {
+            if (includeRoles)
+                _dbSet.Include(d => d.DocumentRoles)
+                    .ThenInclude(d => d.Role)
+                    .AsNoTracking();
+            if (sorted)
+                _dbSet.OrderBy(d => d.Id).AsNoTracking();
             return await _dbSet.AsNoTracking().ToListAsync();
         }
 
@@ -53,25 +60,6 @@ namespace BLL.Implementation
         {
             _context.Update(contractDocument);
             await _context.SaveChangesAsync();
-        }
-
-        public IEnumerable<ContractDocument> GetWithInclude(params Expression<Func<ContractDocument, object>>[] includeProperties)
-        {
-            return Include(includeProperties).ToList();
-        }
-
-        public IEnumerable<ContractDocument> GetWithInclude(Func<ContractDocument, bool> predicate,
-            params Expression<Func<ContractDocument, object>>[] includeProperties)
-        {
-            var query = Include(includeProperties);
-            return query.Where(predicate).ToList();
-        }
-
-        private IQueryable<ContractDocument> Include(params Expression<Func<ContractDocument, object>>[] includeProperties)
-        {
-            IQueryable<ContractDocument> query = _dbSet.AsNoTracking();
-            return includeProperties
-                .Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
         }
     }
 }

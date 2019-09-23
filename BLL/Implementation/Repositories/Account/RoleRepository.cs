@@ -39,13 +39,24 @@ namespace BLL.Implementation
             }
         }
 
-        public async Task<Role> Get(int id)
+        public async Task<Role> Get(int id, bool includeDocuments = false)
         {
+            if (includeDocuments)
+                _dbSet.Include(r => r.DocumentContractRoles)
+                    .ThenInclude(r => r.ContractDocument)
+                    .AsNoTracking();
+
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Role>> GetAll()
+        public async Task<IEnumerable<Role>> GetAll(bool includeDocuments = false, bool sorted = false)
         {
+            if (includeDocuments)
+                _dbSet.Include(r => r.DocumentContractRoles)
+                    .ThenInclude(r => r.ContractDocument)
+                    .AsNoTracking();
+            if (sorted)
+                _dbSet.OrderBy(r => r.Id).AsNoTracking();
             return await _dbSet.AsNoTracking().ToListAsync();
         }
 
@@ -53,25 +64,6 @@ namespace BLL.Implementation
         {
             _context.Update(role);
             await _context.SaveChangesAsync();
-        }
-
-        public IEnumerable<Role> GetWithInclude(params Expression<Func<Role, object>>[] includeProperties)
-        {
-            return Include(includeProperties).ToList();
-        }
-
-        public IEnumerable<Role> GetWithInclude(Func<Role, bool> predicate,
-            params Expression<Func<Role, object>>[] includeProperties)
-        {
-            var query = Include(includeProperties);
-            return query.Where(predicate).ToList();
-        }
-
-        private IQueryable<Role> Include(params Expression<Func<Role, object>>[] includeProperties)
-        {
-            IQueryable<Role> query = _dbSet.AsNoTracking();
-            return includeProperties
-                .Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
         }
     }
 }

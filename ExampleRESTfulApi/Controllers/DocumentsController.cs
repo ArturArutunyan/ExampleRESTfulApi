@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BLL;
 using DAL.EF;
 using DAL.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace TitulWebCards.Controllers
 {
@@ -14,23 +13,25 @@ namespace TitulWebCards.Controllers
     [ApiController]
     public class DocumentsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private DataManager _dataManager;
+        private ApplicationDbContext _db;
 
-        public DocumentsController(ApplicationDbContext context)
+        public DocumentsController(DataManager dataManager, ApplicationDbContext db)
         {
-            _context = context;
+            _dataManager = dataManager;
+            _db = db;
         }
 
         [HttpGet]
-        public string GetDocuments()
+        public async Task<IEnumerable<User>> GetAll()
         {
-            return "d";
+            return await _dataManager.Users.GetAll(true);
         }
 
         [HttpGet("{id}", Name = "Get")]
-        public string GetDocument(int id)
+        public async Task<IEnumerable<Role>> Get(int id)
         {
-            return "value";
+            return null;
         }
 
         [HttpPost]

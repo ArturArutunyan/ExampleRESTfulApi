@@ -2,11 +2,8 @@
 using DAL.EF;
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BLL.Implementation
@@ -39,13 +36,23 @@ namespace BLL.Implementation
             }
         }
 
-        public async Task<User> Get(int id)
+        public async Task<User> Get(int id, bool includeRoles = false)
         {
+            if (includeRoles)
+                _dbSet.Include(d => d.UserRoles)
+                    .ThenInclude(d => d.Role).ThenInclude(d => d.RoleName)
+                    .AsNoTracking();
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<User>> GetAll()
+        public async Task<IEnumerable<User>> GetAll(bool includeRoles = false, bool sorted = false)
         {
+            if (includeRoles)
+                _dbSet.Include(d => d.UserRoles)
+                    .ThenInclude(d => d.Role)
+                    .AsNoTracking();
+            if (sorted)
+                _dbSet.OrderBy(d => d.Id).AsNoTracking();
             return await _dbSet.AsNoTracking().ToListAsync();
         }
 
@@ -55,23 +62,9 @@ namespace BLL.Implementation
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<User> GetWithInclude(params Expression<Func<User, object>>[] includeProperties)
+        public async Task<IEnumerable<Role>> GetRolesById(int id)
         {
-            return Include(includeProperties).ToList();
-        }
-
-        public IEnumerable<User> GetWithInclude(Func<User, bool> predicate,
-            params Expression<Func<User, object>>[] includeProperties)
-        {
-            var query = Include(includeProperties);
-            return query.Where(predicate).ToList();
-        }
-
-        private IQueryable<User> Include(params Expression<Func<User, object>>[] includeProperties)
-        {
-            IQueryable<User> query = _dbSet.AsNoTracking();
-            return includeProperties
-                .Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
+            return await _context.Roles.Where(u => u.Id == id).AsNoTracking().ToListAsync(); ;
         }
     }
 }

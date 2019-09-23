@@ -83,7 +83,7 @@ namespace DAL.EF
                         new UserRole() { UserId = users[2].Id, RoleId = roles[1].Id },
                         new UserRole() { UserId = users[3].Id, RoleId = roles[1].Id },
                     };
-
+    
             var documentContractRoles = new DocumentContractRole[]
                 {
                     new DocumentContractRole() { RoleId = roles[0].Id, ContractDocumentId = contractDocument[0].Id }

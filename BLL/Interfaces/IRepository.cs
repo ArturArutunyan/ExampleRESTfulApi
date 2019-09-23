@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,14 +32,14 @@ namespace BLL.Interfaces
         /// <returns>
         /// Запись по ключу
         /// </returns>
-        Task<TEntity> Get(TKey id);
+        Task<TEntity> Get(TKey id, bool includeData = false);
         /// <summary>
         /// Получить все записи
         /// </summary>
         /// <returns>
         /// Все записи в базе
         /// </returns>
-        Task<IEnumerable<TEntity>> GetAll();
+        Task<IEnumerable<TEntity>> GetAll(bool includeData = false, bool sorted = false);
         /// <summary>
         /// Обновить запись
         /// </summary>

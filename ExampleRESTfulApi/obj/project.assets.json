@@ -4789,6 +4789,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
       "DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -13081,6 +13094,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "BLL/1.0.0": {
+      "type": "project",
+      "path": "../BLL/BLL.csproj",
+      "msbuildProject": "../BLL/BLL.csproj"
+    },
     "DAL/1.0.0": {
       "type": "project",
       "path": "../DAL/DAL.csproj",
@@ -13089,6 +13107,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "BLL >= 1.0.0",
       "DAL >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -13127,6 +13146,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\BLL\\BLL.csproj"
+            },
             "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\DAL.csproj": {
               "projectPath": "C:\\Users\\ArutyunyanAV\\source\\repos\\ExampleRESTfulApi\\DAL\\DAL.csproj"
             }
