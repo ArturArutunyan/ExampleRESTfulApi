@@ -18,9 +18,14 @@ D:\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\DAL.dll
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
-C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.dll
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache

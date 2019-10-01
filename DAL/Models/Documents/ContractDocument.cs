@@ -1,7 +1,7 @@
 ﻿
 namespace DAL.Models
 {
-    public class ContractDocument : DocumentBase<DocumentContractRole>
+    public class ContractDocument : DocumentBase
     {
     }
 }

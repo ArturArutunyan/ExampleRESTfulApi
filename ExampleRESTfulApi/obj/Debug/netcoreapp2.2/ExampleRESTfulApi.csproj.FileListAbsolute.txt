@@ -34,3 +34,9 @@ C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.pdb
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\BLL.dll
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\BLL.pdb
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\ExampleRESTfulApi.xml
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\obj\Debug\netcoreapp2.2\ExampleRESTfulApi.xml
+C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\ExampleRESTfulApi\bin\Debug\netcoreapp2.2\appsettings.Production.json
