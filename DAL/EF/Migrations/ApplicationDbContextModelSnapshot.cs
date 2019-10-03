@@ -19,6 +19,36 @@ namespace DAL.EF.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("DAL.Models.ContractDocument", b =>
+                {
+                    b.Property<Guid>("Guid")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("DocumentName")
+                        .IsRequired();
+
+                    b.Property<string>("Title")
+                        .IsRequired();
+
+                    b.HasKey("Guid");
+
+                    b.ToTable("contractDocuments");
+
+                    b.HasData(
+                        new
+                        {
+                            Guid = new Guid("ce9b1600-e87d-400a-bddb-15a2b4288210"),
+                            DocumentName = "titul contract",
+                            Title = "Titul2005"
+                        },
+                        new
+                        {
+                            Guid = new Guid("3adeadd8-ea4b-4641-a3a8-17967cd80e9d"),
+                            DocumentName = "Road-pro contract",
+                            Title = "Road-pro"
+                        });
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")

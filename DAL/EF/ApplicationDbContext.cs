@@ -3,17 +3,22 @@
 
 using DAL.Enums;
 using DAL.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 
 namespace DAL.EF
 {
     public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
+        public DbSet<ContractDocument> contractDocuments { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
@@ -26,12 +31,19 @@ namespace DAL.EF
         /// </summary>
         public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
         {
+            private IHostingEnvironment _env;
+
+            public ApplicationDbContextFactory(IHostingEnvironment env)
+            {
+                _env = env;
+            }
 
             public ApplicationDbContext CreateDbContext(string[] args)
             {
                 IConfigurationRoot configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile(path: "appsettings.json", optional: true, reloadOnChange: true)
+                    .AddJsonFile($"appsettings.{_env.EnvironmentName}.json", optional: true)
                     .Build();
 
                 var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
@@ -52,7 +64,8 @@ namespace DAL.EF
                     new { Id = "1", Name = "Admin", NormalizedName = "ADMIN"},
                     new { Id = "2", Name = "Customer", NormalizedName = "CUSTOMER" }
                 );
-            //modelBuilder.IdentityBuild();
+
+            modelBuilder.IdentityBuild();
         }
     }
 
@@ -65,16 +78,14 @@ namespace DAL.EF
 
             var contractDocument = new ContractDocument[]
                 {
-                    new ContractDocument() { Id = 1, DocumentName = "Contract Document" }
+                    new ContractDocument() { Guid = Guid.NewGuid(), Title = "Titul2005", DocumentName = "titul contract" },
+                    new ContractDocument() { Guid = Guid.NewGuid(), Title = "Road-pro", DocumentName = "Road-pro contract" }
                 };
 
             #endregion
 
-            #region Building identity entities
-
-            builder.Entity<ContractDocument>().Property(c => c.DocumentName).IsRequired();
+            #region Building identity entities          
             builder.Entity<ContractDocument>().HasData(contractDocument);
-
             #endregion
         }
     }

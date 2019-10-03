@@ -7,11 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using BLL;
 using ExampleRESTfulApi.Providers;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using Microsoft.Extensions.Logging;
+using BLL.Interfaces;
 
 namespace TitulWebCards
 {
@@ -39,13 +36,13 @@ namespace TitulWebCards
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("DAL")));
 
-            services.AddAuthorizationServices(Configuration);
+            services.AddAuthorizationServices(Configuration); // добавление сервисов авторизации и аутентификации
 
-            services.AddScoped<DataManager>();
+            services.AddScoped<IDataManager, DataManager>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
-            services.AddSwaggerService();
+            services.AddSwaggerService(); // добавление и настройка swagger
 
         }
         

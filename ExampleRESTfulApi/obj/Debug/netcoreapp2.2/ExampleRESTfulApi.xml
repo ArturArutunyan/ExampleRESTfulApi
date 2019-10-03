@@ -9,5 +9,10 @@
             <b>Данные в примере являются валидными</b>
             </remarks>
         </member>
+        <member name="M:ExampleRESTfulApi.Controllers.DocumentController.Create(DAL.Models.ContractDocument)">
+            <remarks>
+            <b>Данные в примере являются валидными</b>
+            </remarks>
+        </member>
     </members>
 </doc>

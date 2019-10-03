@@ -1,14 +1,30 @@
-﻿using BLL.Interfaces.Documents;
+﻿using BLL.Implementation.Repositories.Documents;
+using BLL.Interfaces;
+using BLL.Interfaces.Documents;
+using DAL.EF;
 
 namespace BLL
 {
-    public class DataManager
+    public class DataManager : IDataManager
     {
-        public IContractDocumentRepository ContractDocuments { get; }
+        private ApplicationDbContext _context;
+        private IContractDocumentRepository _contractDocuments;
 
-        public DataManager(IContractDocumentRepository contractDocumentRepository)
+        public DataManager(ApplicationDbContext context)
         {
-            ContractDocuments = contractDocumentRepository;
+            _context = context;
         }
+
+        #region Properties
+        public IContractDocumentRepository ContractDocuments
+        {
+            get
+            {
+                if (_contractDocuments == null)
+                    _contractDocuments = new ContractDocumentRepository(_context);
+                return _contractDocuments;
+            }
+        }
+        #endregion
     }
 }

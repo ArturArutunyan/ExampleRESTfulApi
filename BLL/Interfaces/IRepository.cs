@@ -32,14 +32,14 @@ namespace BLL.Interfaces
         /// <returns>
         /// Запись по ключу
         /// </returns>
-        Task<TEntity> Get(TKey id, bool includeData = false);
+        Task<TEntity> GetWhere(TKey key);
         /// <summary>
         /// Получить все записи
         /// </summary>
         /// <returns>
         /// Все записи в базе
         /// </returns>
-        Task<IEnumerable<TEntity>> GetAll(bool includeData = false, bool sorted = false);
+        Task<IEnumerable<TEntity>> GetAll();
         /// <summary>
         /// Обновить запись
         /// </summary>
@@ -53,6 +53,6 @@ namespace BLL.Interfaces
         /// <param name="id">
         /// Ключ записи в базе
         /// </param>
-        Task Delete(TKey id);
+        Task Delete(TKey key);
     }
 }

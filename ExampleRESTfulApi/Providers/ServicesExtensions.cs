@@ -87,7 +87,10 @@ namespace ExampleRESTfulApi.Providers
                 options.IncludeXmlComments(xmlPath);               
             });
 
-            services.AddSwaggerExamplesFromAssemblyOf<LoginViewModelExample>(); // зарегистрирует пример в ServiceProvider 
+            // зарегистрирует в ServiceProvider, для отображения пользовательских примеров в запросах
+            services.AddSwaggerExamplesFromAssemblyOf<LoginViewModelExample>(); 
+            services.AddSwaggerExamplesFromAssemblyOf<ContractDocumentModelExample>();
+            //----------------------------------------------------------------------------------------
 
             return services;
         }
