@@ -8,7 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 using BLL;
 using ExampleRESTfulApi.Providers;
 using Microsoft.Extensions.Logging;
+using Serilog.Extensions.Logging;
 using BLL.Interfaces;
+using ExampleRESTfulApi.Middlewares;
 
 namespace TitulWebCards
 {
@@ -48,7 +50,10 @@ namespace TitulWebCards
         
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory  loggerFactory)
         {
-            
+            app.UseRequestLogging();
+            loggerFactory.AddFile("Logs/App/{Date}", minimumLevel: LogLevel.Warning);
+            var logger = loggerFactory.CreateLogger("FileLogger");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -61,7 +66,7 @@ namespace TitulWebCards
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "ExampleRESTApi V1");
             });
 
             app.UseAuthentication();

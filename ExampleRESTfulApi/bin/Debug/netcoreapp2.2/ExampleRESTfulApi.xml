@@ -14,5 +14,12 @@
             <b>Данные в примере являются валидными</b>
             </remarks>
         </member>
+        <member name="M:ExampleRESTfulApi.Middlewares.Extensions.UseRequestLogging(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)">
+            <summary>
+            Ведение логов запросов. Прописывается вначале.
+            </summary>
+            <param name="directoryPath">Пуль к директории</param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

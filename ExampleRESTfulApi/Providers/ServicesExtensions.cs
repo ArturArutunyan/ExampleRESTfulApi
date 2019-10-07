@@ -58,9 +58,9 @@ namespace ExampleRESTfulApi.Providers
         {        
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "ExampleRESTApi", Version = "v1" });
 
-                options.ExampleFilters(); // Разрешает добавление фильтров         
+                options.ExampleFilters(); // Разрешает добавление фильтров   
 
                 options.AddSecurityDefinition("Bearer", // название схемы безопасности
                 new OpenApiSecurityScheme

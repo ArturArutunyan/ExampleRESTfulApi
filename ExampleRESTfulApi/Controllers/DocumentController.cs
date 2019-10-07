@@ -11,7 +11,7 @@ namespace ExampleRESTfulApi.Controllers
     [ApiController]
     public class DocumentController : ControllerBase
     {
-        private IDataManager _dataManager;
+        private readonly IDataManager _dataManager;
         public DocumentController(IDataManager dataManager)
         {
             _dataManager = dataManager;
