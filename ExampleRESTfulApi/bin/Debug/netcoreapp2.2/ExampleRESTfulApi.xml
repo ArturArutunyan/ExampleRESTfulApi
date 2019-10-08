@@ -4,7 +4,7 @@
         <name>ExampleRESTfulApi</name>
     </assembly>
     <members>
-        <member name="M:JwtAuthentication.Controllers.AuthController.Login(JwtAuthentication.ViewModels.LoginViewModel)">
+        <member name="M:JwtAuthentication.Controllers.AuthController.Login(JwtAuthentication.ViewModels.LoginModel)">
             <remarks>
             <b>Данные в примере являются валидными</b>
             </remarks>

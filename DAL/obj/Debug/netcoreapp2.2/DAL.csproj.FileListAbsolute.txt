@@ -28,7 +28,6 @@ C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
-C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Hosting.Abstractions.dll
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Hosting.dll
 C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Hosting.xml

@@ -59,12 +59,6 @@ namespace DAL.EF
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<IdentityRole>().HasData(
-                    new { Id = "1", Name = "Admin", NormalizedName = "ADMIN"},
-                    new { Id = "2", Name = "Customer", NormalizedName = "CUSTOMER" }
-                );
-
             modelBuilder.IdentityBuild();
         }
     }
@@ -84,7 +78,16 @@ namespace DAL.EF
 
             #endregion
 
-            #region Building identity entities          
+            #region Building identity entities 
+            builder.Entity<IdentityRole>().HasData(
+                new { Id = "1", Name = "Admin", NormalizedName = "ADMIN" },
+                new { Id = "2", Name = "Customer", NormalizedName = "CUSTOMER" }
+            );
+
+            builder.Entity<IdentityUser>()
+                .Property(u => u.Id)
+                .HasDefaultValueSql("NEWID()"); // генерация guid
+
             builder.Entity<ContractDocument>().HasData(contractDocument);
             #endregion
         }
