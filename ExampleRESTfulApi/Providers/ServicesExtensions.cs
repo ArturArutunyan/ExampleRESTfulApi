@@ -12,6 +12,7 @@ using System;
 using System.Text;
 using Swashbuckle.AspNetCore.Filters;
 using ExampleRESTfulApi.Swagger.RequestExamples;
+using DAL.Models;
 
 namespace ExampleRESTfulApi.Providers
 {
@@ -19,7 +20,7 @@ namespace ExampleRESTfulApi.Providers
     {
         public static IServiceCollection AddAuthorizationServices(this IServiceCollection services, IConfiguration configuration)
         {        
-            services.AddIdentity<IdentityUser, IdentityRole>(
+            services.AddIdentity<ApplicationUser, ApplicationRole>(
                 // Настройка характеристик пароля 
                 option =>
                 {

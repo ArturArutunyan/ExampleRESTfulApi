@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
+using DAL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,27 +12,27 @@ namespace ExampleRESTfulApi.Controllers.api
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public UsersController(UserManager<IdentityUser> userManager)
+        public UsersController(UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
         }
 
         [HttpGet]
-        public IEnumerable<IdentityUser> GetAll() => _userManager.Users.ToList();
+        public IEnumerable<ApplicationUser> GetAll() => _userManager.Users.ToList();
 
         [HttpGet("{guid}")]
-        public async Task<IdentityUser> Get(Guid guid) => await _userManager.FindByIdAsync(guid.ToString());
+        public async Task<ApplicationUser> Get(Guid guid) => await _userManager.FindByIdAsync(guid.ToString());
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] IdentityUser modelUser)
+        public async Task<IActionResult> CreateUser([FromBody] ApplicationUser modelUser)
         {
-            var user = await _userManager.FindByIdAsync(modelUser.Id);
+            var user = await _userManager.FindByIdAsync(modelUser.Id.ToString());
 
             if (user == null)
             {
-                modelUser.Id = Guid.NewGuid().ToString();
+                modelUser.Id = Guid.NewGuid();
                 await _userManager.CreateAsync(modelUser);
                 return Created("api/users", modelUser);
             }
@@ -56,7 +56,7 @@ namespace ExampleRESTfulApi.Controllers.api
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteUser([FromBody] IdentityUser user)
+        public async Task<IActionResult> DeleteUser([FromBody] ApplicationUser user)
         {
             var result = await _userManager.DeleteAsync(user);
 

@@ -1,0 +1,70 @@
+
+13:33:28 | RequestId: 0HLQDCJJQB4B3:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 236
+
+13:33:28 | RequestId: 0HLQDCJJQB4B3:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 195
+
+13:33:33 | RequestId: 0HLQDCJJQB4B3:00000003 | Status: 500
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 209
+
+14:53:07 | RequestId: 0HLQDE03QR5UG:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 150
+
+14:53:07 | RequestId: 0HLQDE03QR5UG:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 179
+
+14:53:15 | RequestId: 0HLQDE03QR5UG:00000003 | Status: 401
+	Query: GET /api/Values
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 138
+
+14:53:37 | RequestId: 0HLQDE03QR5UG:00000004 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 15103
+
+14:55:55 | RequestId: 0HLQDE1M77RMI:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 144
+
+14:55:55 | RequestId: 0HLQDE1M77RMI:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 173
+
+14:56:16 | RequestId: 0HLQDE1M77RMI:00000003 | Status: 500
+	Query: POST /register
+	Body: {"email":"admin","password":"111111"}
+	User: 
+	Ip: ::1
+	Elapsed: 192

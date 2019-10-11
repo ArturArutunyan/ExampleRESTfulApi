@@ -1,15 +1,14 @@
-﻿ using DAL.EF;
+﻿using BLL;
+using BLL.Interfaces;
+using DAL.EF;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using BLL;
 using ExampleRESTfulApi.Providers;
 using Microsoft.Extensions.Logging;
-using Serilog.Extensions.Logging;
-using BLL.Interfaces;
 using ExampleRESTfulApi.Middlewares;
 
 namespace TitulWebCards
@@ -37,7 +36,7 @@ namespace TitulWebCards
         {
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("DAL")));
-
+          
             services.AddAuthorizationServices(Configuration); // добавление сервисов авторизации и аутентификации
 
             services.AddScoped<IDataManager, DataManager>();

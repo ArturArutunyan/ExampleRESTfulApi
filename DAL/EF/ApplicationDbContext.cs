@@ -1,11 +1,8 @@
 ﻿/// Hints
 /// add-migration name -outputdir "C:\Users\ArutyunyanAV\source\repos\ExampleRESTfulApi\DAL\EF\Migrations"
 
-using DAL.Enums;
 using DAL.Models;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Internal;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -15,9 +12,9 @@ using System.IO;
 
 namespace DAL.EF
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
     {
-        public DbSet<ContractDocument> contractDocuments { get; set; }
+        DbSet<ContractDocument> contractDocuments { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -32,7 +29,11 @@ namespace DAL.EF
         public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
         {
             private IHostingEnvironment _env;
-
+     
+            public ApplicationDbContextFactory()
+            {
+               
+            }
             public ApplicationDbContextFactory(IHostingEnvironment env)
             {
                 _env = env;
@@ -43,13 +44,14 @@ namespace DAL.EF
                 IConfigurationRoot configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile(path: "appsettings.json", optional: true, reloadOnChange: true)
-                    .AddJsonFile($"appsettings.{_env.EnvironmentName}.json", optional: true)
+                    //.AddJsonFile($"appsettings.{_env.EnvironmentName}.json", optional: true) // Эта строка вызывает ошибку, т.к. обьект env == null
+                    //.AddEnvironmentVariables()
                     .Build();
 
                 var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
                 var connectionString = configuration.GetConnectionString("DefaultConnection");
-                builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("DAL"));
+                builder.UseSqlServer(connectionString);
 
                 return new ApplicationDbContext(builder.Options);
             }
@@ -69,7 +71,11 @@ namespace DAL.EF
         {
 
             #region Data for init
-
+            var roles = new ApplicationRole[]
+                {
+                    new ApplicationRole() { Id = Guid.NewGuid(), Name = "Admin", NormalizedName = "ADMIN" },
+                    new ApplicationRole() { Id = Guid.NewGuid(), Name = "Customer", NormalizedName = "CUSTOMER" }
+                };
             var contractDocument = new ContractDocument[]
                 {
                     new ContractDocument() { Guid = Guid.NewGuid(), Title = "Titul2005", DocumentName = "titul contract" },
@@ -79,15 +85,15 @@ namespace DAL.EF
             #endregion
 
             #region Building identity entities 
-            builder.Entity<IdentityRole>().HasData(
-                new { Id = "1", Name = "Admin", NormalizedName = "ADMIN" },
-                new { Id = "2", Name = "Customer", NormalizedName = "CUSTOMER" }
-            );
-
-            builder.Entity<IdentityUser>()
+            builder.Entity<ApplicationUser>()
                 .Property(u => u.Id)
-                .HasDefaultValueSql("NEWID()"); // генерация guid
+                .HasDefaultValueSql("newsequentialid()"); // генерация guid
 
+            builder.Entity<ApplicationRole>()
+               .Property(u => u.Id)
+               .HasDefaultValueSql("newsequentialid()");
+
+            builder.Entity<ApplicationRole>().HasData(roles);
             builder.Entity<ContractDocument>().HasData(contractDocument);
             #endregion
         }
