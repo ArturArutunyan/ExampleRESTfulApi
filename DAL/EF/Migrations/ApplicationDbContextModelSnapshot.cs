@@ -46,15 +46,15 @@ namespace DAL.EF.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d149ed9c-5bcc-4470-b384-e244a6de0ec9"),
-                            ConcurrencyStamp = "e9e3b17f-17fe-419a-9ec3-b5d650d22711",
+                            Id = new Guid("ea4891d9-3170-4108-a1f4-91954ebba25f"),
+                            ConcurrencyStamp = "1534d92a-bf16-4cc1-87ff-718a34110565",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("183e5009-71ea-4729-bfd8-22cba7d5b009"),
-                            ConcurrencyStamp = "b4eeac8e-1825-4862-8ac4-cc20259815ed",
+                            Id = new Guid("48dc05d9-e563-4444-a75a-f7fd99a543c9"),
+                            ConcurrencyStamp = "4d6a68ee-2b1e-4ac7-ad0e-4876cc233e71",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER"
                         });
@@ -130,13 +130,13 @@ namespace DAL.EF.Migrations
                     b.HasData(
                         new
                         {
-                            Guid = new Guid("c89ac60c-01b0-4f5e-bdea-77d44933093f"),
+                            Guid = new Guid("5305882f-223f-465a-a76c-ae8cff2e993c"),
                             DocumentName = "titul contract",
                             Title = "Titul2005"
                         },
                         new
                         {
-                            Guid = new Guid("817e36c8-dfd1-48af-9580-d332d66db718"),
+                            Guid = new Guid("c0ab5872-3857-4c9e-be53-38f1e55debc9"),
                             DocumentName = "Road-pro contract",
                             Title = "Road-pro"
                         });

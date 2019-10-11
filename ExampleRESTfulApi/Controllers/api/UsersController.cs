@@ -26,15 +26,21 @@ namespace ExampleRESTfulApi.Controllers.api
         public async Task<ApplicationUser> Get(Guid guid) => await _userManager.FindByIdAsync(guid.ToString());
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] ApplicationUser modelUser)
+        public async Task<IActionResult> CreateUser([FromBody] ApplicationUser model)
         {
-            var user = await _userManager.FindByIdAsync(modelUser.Id.ToString());
-
-            if (user == null)
+            var user = new ApplicationUser
             {
-                modelUser.Id = Guid.NewGuid();
-                await _userManager.CreateAsync(modelUser);
-                return Created("api/users", modelUser);
+                Email = model.Email,
+                UserName = model.UserName,
+                SecurityStamp = Guid.NewGuid().ToString()
+            };
+
+            var result = await _userManager.CreateAsync(user, "111111"); // cтавим дефолтный пароль
+
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "Customer");
+                return Created("api/users", model);
             }
             return Conflict();
         }
@@ -66,7 +72,7 @@ namespace ExampleRESTfulApi.Controllers.api
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         [Route("{guid}/password")]
         public async Task<IActionResult> ResetPassword(Guid guid)
         {
@@ -76,7 +82,7 @@ namespace ExampleRESTfulApi.Controllers.api
             {
                 string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
                 await _userManager.ResetPasswordAsync(user, resetToken, "111111");
-                return Ok();
+                return Ok(user);
             }
             return NotFound();
         }

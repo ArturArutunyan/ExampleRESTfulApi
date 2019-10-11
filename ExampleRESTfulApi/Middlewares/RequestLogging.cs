@@ -105,6 +105,7 @@ namespace ExampleRESTfulApi.Middlewares
         /// <summary>
         /// Ведение логов запросов. Прописывается вначале.
         /// </summary>
+        /// <param name="builder">Расширяемый обьект</param>
         /// <param name="directoryPath">Пуль к директории</param>
         /// <returns></returns>
         public static IApplicationBuilder UseRequestLogging(this IApplicationBuilder builder, string directoryPath = "Logs/Requests/")

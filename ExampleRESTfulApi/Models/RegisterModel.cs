@@ -9,6 +9,9 @@ namespace JwtAuthentication.ViewModels
     public class RegisterModel
     {
         [Required]
+        public string Login { get; set; }
+
+        [Required]
         [EmailAddress]
         public string Email { get; set; }
 

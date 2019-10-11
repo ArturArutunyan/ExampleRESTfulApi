@@ -3,7 +3,7 @@
     /// <summary>
     /// Содержит роли
     /// </summary>
-    enum Roles
+    enum Role
     {
         Admin = 1,
         User
