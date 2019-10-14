@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace BLL.Interfaces.Documents
@@ -23,9 +24,9 @@ namespace BLL.Interfaces.Documents
             await _context.SaveChangesAsync();       
         }
 
-        public async Task<TEntity> GetWhere(TKey key)
+        public async Task<TEntity> GetWhere(Expression<Func<TEntity, bool>> expression)
         {
-            return await _context.Set<TEntity>().FindAsync(key);
+            return await _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(expression);
         }
 
         public async Task<IEnumerable<TEntity>> GetAll()
@@ -39,15 +40,10 @@ namespace BLL.Interfaces.Documents
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(TKey key)
+        public async Task Delete(TEntity entity)
         {
-            var entity = await _context.Set<TEntity>().FindAsync(key);
-
-            if (entity != null)
-            {
-                _context.Set<TEntity>().Remove(entity);
-                await _context.SaveChangesAsync();
-            }    
+            _context.Set<TEntity>().Remove(entity);
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BLL.Interfaces
@@ -24,15 +22,15 @@ namespace BLL.Interfaces
         /// </param>
         Task Create(TEntity entity);
         /// <summary>
-        /// Получить запись по ключу
+        /// Получить запись
         /// </summary>
-        /// <param name="id">
-        /// Ключ записи в базе
+        /// <param name="expression">
+        /// Предикат
         /// </param>
         /// <returns>
-        /// Запись по ключу
+        /// Запись
         /// </returns>
-        Task<TEntity> GetWhere(TKey key);
+        Task<TEntity> GetWhere(Expression<Func<TEntity, bool>> expression);
         /// <summary>
         /// Получить все записи
         /// </summary>
@@ -50,9 +48,9 @@ namespace BLL.Interfaces
         /// <summary>
         /// Удалить запись
         /// </summary>
-        /// <param name="id">
-        /// Ключ записи в базе
+        /// <param name="entity">
+        /// Сущность в базе
         /// </param>
-        Task Delete(TKey key);
+        Task Delete(TEntity entity);
     }
 }

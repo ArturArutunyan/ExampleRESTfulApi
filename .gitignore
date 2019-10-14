@@ -335,5 +335,4 @@ healthchecksdb
 MigrationBackup/
 
 # Custom
-/ExampleRESTfulApi/ExampleRESTfulApi/logs/Request
-/ExampleRESTfulApi/ExampleRESTfulApi/logs/App
+/ExampleRESTfulApi/ExampleRESTfulApi/Logs

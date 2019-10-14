@@ -1,5 +1,6 @@
 ﻿using DAL.Models;
 using System;
+using System.Threading.Tasks;
 
 namespace BLL.Interfaces.Documents
 {

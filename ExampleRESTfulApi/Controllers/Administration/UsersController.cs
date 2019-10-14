@@ -12,10 +12,11 @@ namespace ExampleRESTfulApi.Controllers.api
     [ApiController]
     public class UsersController : ControllerBase
     {
+        private readonly RoleManager<ApplicationRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
-
-        public UsersController(UserManager<ApplicationUser> userManager)
+        public UsersController(RoleManager<ApplicationRole> roleManager, UserManager<ApplicationUser> userManager)
         {
+            _roleManager = roleManager;
             _userManager = userManager;
         }
 
@@ -23,7 +24,14 @@ namespace ExampleRESTfulApi.Controllers.api
         public IEnumerable<ApplicationUser> GetAll() => _userManager.Users.ToList();
 
         [HttpGet("{guid}")]
-        public async Task<ApplicationUser> Get(Guid guid) => await _userManager.FindByIdAsync(guid.ToString());
+        public async Task<IActionResult> Get(Guid guid)
+        {
+            var user = await _userManager.FindByIdAsync(guid.ToString());
+
+            if (user != null)
+                Ok(user);
+            return NotFound();
+        }
 
         [HttpPost]
         public async Task<IActionResult> CreateUser([FromBody] ApplicationUser model)
@@ -71,6 +79,11 @@ namespace ExampleRESTfulApi.Controllers.api
             return NotFound();
         }
 
+        /// <summary>
+        /// Сброс пароля
+        /// </summary>
+        /// <param name="guid">guid пользователя</param>
+        /// <returns></returns>
         [HttpPost]
         //[ValidateAntiForgeryToken]
         [Route("{guid}/password")]
@@ -83,6 +96,33 @@ namespace ExampleRESTfulApi.Controllers.api
                 string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
                 await _userManager.ResetPasswordAsync(user, resetToken, "111111");
                 return Ok(user);
+            }
+            return NotFound();
+        }
+
+        /// <summary>
+        /// Получение всех ролей пользователя
+        /// </summary>
+        /// <param name="guid">guid пользователя</param>
+        /// <returns></returns>
+        [HttpGet("{guid}/roles")]
+        public async Task<IActionResult> GetAllUserRoles(Guid guid)
+        {
+            var user = await _userManager.FindByIdAsync(guid.ToString());
+
+            if (user != null)
+            {
+                var userRoles = await _userManager.GetRolesAsync(user);
+
+                var allRoles = _roleManager.Roles.ToList();
+
+                var roles = new
+                {
+                    userRoles,
+                    allRoles
+                };
+
+                return Ok(roles);
             }
             return NotFound();
         }

@@ -1,0 +1,1600 @@
+
+09:37:58 | RequestId: 0HLQGD2L5QSEO:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 179
+
+09:37:59 | RequestId: 0HLQGD2L5QSEO:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 336
+
+09:38:08 | RequestId: 0HLQGD2L5QSEO:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4885
+
+09:38:25 | RequestId: 0HLQGD2L5QSEO:00000004 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 134
+
+10:11:43 | RequestId: 0HLQGDLH4KM6Q:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 141
+
+10:11:43 | RequestId: 0HLQGDLH4KM6Q:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 180
+
+10:12:08 | RequestId: 0HLQGDLH4KM6Q:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4009
+
+10:12:21 | RequestId: 0HLQGDLH4KM6Q:00000004 | Status: 200
+	Query: GET /api/users/5916ce30-18ec-e911-98db-94de8061e487
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 247
+
+10:16:17 | RequestId: 0HLQGDO2J5F8V:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 150
+
+10:16:17 | RequestId: 0HLQGDO2J5F8V:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 204
+
+10:16:23 | RequestId: 0HLQGDO2J5F8V:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 957
+
+10:16:50 | RequestId: 0HLQGDO2J5F8V:00000004 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 760
+
+10:17:44 | RequestId: 0HLQGDO2J5F8V:00000005 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 8601
+
+10:18:58 | RequestId: 0HLQGDO2J5F8V:00000006 | Status: 500
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 81
+
+10:19:01 | RequestId: 0HLQGDO2J5F8V:00000007 | Status: 500
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 75
+
+10:19:01 | RequestId: 0HLQGDO2J5F8V:00000008 | Status: 500
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 77
+
+10:19:01 | RequestId: 0HLQGDO2J5F8V:00000009 | Status: 500
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 73
+
+10:24:12 | RequestId: 0HLQGDSGB6VCF:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 146
+
+10:24:13 | RequestId: 0HLQGDSGB6VCF:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 186
+
+10:24:20 | RequestId: 0HLQGDSGB6VCF:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1055
+
+10:24:28 | RequestId: 0HLQGDSGB6VCF:00000004 | Status: 200
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 143
+
+10:24:58 | RequestId: 0HLQGDSTU5NOV:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 156
+
+10:24:58 | RequestId: 0HLQGDSTU5NOV:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 185
+
+10:25:08 | RequestId: 0HLQGDSTU5NOV:00000003 | Status: 200
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1168
+
+10:25:08 | RequestId: 0HLQGDSTU5NP0:00000001 | Status: 200
+	Query: GET /api/documents/1cc937b1-4a51-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 85
+
+10:27:53 | RequestId: 0HLQGDUI2C9UV:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 140
+
+10:27:53 | RequestId: 0HLQGDUI2C9UV:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 175
+
+10:28:03 | RequestId: 0HLQGDUI2C9UV:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1201
+
+10:28:30 | RequestId: 0HLQGDUI2C9UV:00000004 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 921
+
+10:29:04 | RequestId: 0HLQGDUI2C9UV:00000005 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 14748
+
+10:29:31 | RequestId: 0HLQGDUI2C9UV:00000006 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 10769
+
+10:31:29 | RequestId: 0HLQGE0IIICDU:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 156
+
+10:31:29 | RequestId: 0HLQGE0IIICDU:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 175
+
+10:31:47 | RequestId: 0HLQGE0IIICDU:00000003 | Status: 409
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 7748
+
+10:32:01 | RequestId: 0HLQGE0IIICDU:00000004 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a51-4881-b658-b84933f941eb","title":"Road8-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 3932
+
+10:32:27 | RequestId: 0HLQGE0IIICDU:00000005 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a11-4881-b658-b84933f941eb","title":"Road8-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 4281
+
+10:40:11 | RequestId: 0HLQGE5E5ML7U:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 142
+
+10:40:11 | RequestId: 0HLQGE5E5ML7U:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 166
+
+10:40:22 | RequestId: 0HLQGE5E5ML7U:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3901
+
+10:40:36 | RequestId: 0HLQGE5E5ML7U:00000004 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a11-4881-b658-b84933f941eb","title":"Road8-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 209
+
+10:41:08 | RequestId: 0HLQGE5E5ML7U:00000005 | Status: 500
+	Query: POST /api/documents
+	Body: {"guid":"1cc937b1-4a11-4881-b658-b84933f941eb","title":"Road8-pro","documentName":"Road-pro contract"}
+	User: 
+	Ip: ::1
+	Elapsed: 1526
+
+11:00:16 | RequestId: 0HLQGEGLDEUMG:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 143
+
+11:00:16 | RequestId: 0HLQGEGLDEUMG:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+11:00:30 | RequestId: 0HLQGEGLDEUMG:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3254
+
+11:00:44 | RequestId: 0HLQGEGLDEUMG:00000004 | Status: 200
+	Query: GET /api/documents/1cc937b1-4a11-4881-b658-b84933f941eb
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 132
+
+11:00:54 | RequestId: 0HLQGEGLDEUMG:00000005 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 118
+
+11:00:55 | RequestId: 0HLQGEGLDEUMG:00000006 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 12
+
+11:00:57 | RequestId: 0HLQGEGLDEUMG:00000007 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 7
+
+11:00:58 | RequestId: 0HLQGEGLDEUMG:00000008 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 6
+
+11:00:59 | RequestId: 0HLQGEGLDEUMG:00000009 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 8
+
+11:00:59 | RequestId: 0HLQGEGLDEUMG:0000000A | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 9
+
+11:01:08 | RequestId: 0HLQGEGLDEUMG:0000000B | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 6
+
+11:03:11 | RequestId: 0HLQGEGLDEUMG:0000000C | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 10474
+
+11:07:59 | RequestId: 0HLQGEKVD80RJ:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 138
+
+11:07:59 | RequestId: 0HLQGEKVD80RJ:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 174
+
+11:08:06 | RequestId: 0HLQGEKVD80RJ:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1035
+
+11:09:03 | RequestId: 0HLQGELIBHVN4:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 145
+
+11:09:03 | RequestId: 0HLQGELIBHVN4:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+11:09:08 | RequestId: 0HLQGELIBHVN4:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 832
+
+11:09:15 | RequestId: 0HLQGELIBHVN4:00000004 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 219
+
+11:09:21 | RequestId: 0HLQGELIBHVN4:00000005 | Status: 409
+	Query: POST /api/documents
+	Body: {"guid":"8e770259-7014-4fae-034e-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 13
+
+11:09:52 | RequestId: 0HLQGEM14FASK:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 150
+
+11:09:53 | RequestId: 0HLQGEM14FASK:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 171
+
+11:10:00 | RequestId: 0HLQGEM14FASK:00000003 | Status: 204
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 1059
+
+11:10:34 | RequestId: 0HLQGEMDJ1T5J:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 138
+
+11:10:34 | RequestId: 0HLQGEMDJ1T5J:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 175
+
+11:10:43 | RequestId: 0HLQGEMDJ1T5J:00000003 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 1295
+
+11:10:43 | RequestId: 0HLQGEMDJ1T5I:00000001 | Status: 200
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 652
+
+11:13:39 | RequestId: 0HLQGEO4JD79B:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 141
+
+11:13:39 | RequestId: 0HLQGEO4JD79B:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 179
+
+11:13:58 | RequestId: 0HLQGEO4JD79B:00000003 | Status: 201
+	Query: POST /api/documents
+	Body: {"guid":"00000000-0000-0000-0000-000000000000","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 1117
+
+11:14:04 | RequestId: 0HLQGEO4JD79B:00000004 | Status: 409
+	Query: POST /api/documents
+	Body: {"guid":"8e770259-7014-4fae-034e-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 65
+
+11:30:45 | RequestId: 0HLQGF1MIJIPE:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 147
+
+11:30:46 | RequestId: 0HLQGF1MIJIPE:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 171
+
+11:32:21 | RequestId: 0HLQGF1MIJIPE:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3378
+
+11:32:40 | RequestId: 0HLQGF1MIJIPE:00000004 | Status: 200
+	Query: GET /api/documents/8e770259-7014-4fae-034e-08d750744195
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 140
+
+11:32:44 | RequestId: 0HLQGF1MIJIPE:00000005 | Status: 404
+	Query: GET /api/documents/8e770259-7004-4fae-034e-08d750744195
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 14
+
+11:33:02 | RequestId: 0HLQGF1MIJIPE:00000006 | Status: 400
+	Query: PUT /api/documents
+	Body: {
+  "guid": ""8e770259-7014-4fae-034e-08d750744195",
+  "title": "new",
+  "documentName": "TEST"
+}
+	User: 
+	Ip: ::1
+	Elapsed: 104
+
+11:33:17 | RequestId: 0HLQGF1MIJIPE:00000007 | Status: 404
+	Query: DELETE /api/documents/7e770259-7014-4fae-034e-08d750744195
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 11
+
+11:33:22 | RequestId: 0HLQGF1MIJIPE:00000008 | Status: 200
+	Query: DELETE /api/documents/8e770259-7014-4fae-034e-08d750744195
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 90
+
+11:37:17 | RequestId: 0HLQGF5B4MC5F:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 204
+
+11:37:17 | RequestId: 0HLQGF5B4MC5F:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 175
+
+11:38:13 | RequestId: 0HLQGF5B4MC5F:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1067
+
+11:38:37 | RequestId: 0HLQGF5B4MC5F:00000004 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 11662
+
+11:38:52 | RequestId: 0HLQGF5B4MC5F:00000005 | Status: 500
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d052-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 7134
+
+11:40:32 | RequestId: 0HLQGF5B4MC5F:00000006 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 29809
+
+11:40:41 | RequestId: 0HLQGF5B4MC5F:00000007 | Status: 500
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-031f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 3621
+
+11:42:00 | RequestId: 0HLQGF7VJBBQJ:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 191
+
+11:42:00 | RequestId: 0HLQGF7VJBBQJ:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 184
+
+11:42:18 | RequestId: 0HLQGF7VJBBQJ:00000003 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 12570
+
+11:58:24 | RequestId: 0HLQGF7VJBBQL:00000001 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 8760
+
+11:58:42 | RequestId: 0HLQGF7VJBBQL:00000002 | Status: 404
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d450-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 8456
+
+11:59:04 | RequestId: 0HLQGF7VJBBQL:00000003 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"New_road","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 3137
+
+11:59:09 | RequestId: 0HLQGF7VJBBQL:00000004 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 35
+
+12:01:52 | RequestId: 0HLQGFJ2UCHH0:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 135
+
+12:01:53 | RequestId: 0HLQGFJ2UCHH0:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+12:01:59 | RequestId: 0HLQGFJ2UCHH0:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1007
+
+12:02:25 | RequestId: 0HLQGFJ2UCHH0:00000004 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 5358
+
+12:02:33 | RequestId: 0HLQGFJ2UCHH0:00000005 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"nwq","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 11
+
+12:02:36 | RequestId: 0HLQGFJ2UCHH0:00000006 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"nwq","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 9
+
+12:02:38 | RequestId: 0HLQGFJ2UCHH0:00000007 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 5
+
+12:02:38 | RequestId: 0HLQGFJ2UCHH0:00000008 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 29
+
+12:02:40 | RequestId: 0HLQGFJ2UCHH0:00000009 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4
+
+12:05:12 | RequestId: 0HLQGFKUF6QKG:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 171
+
+12:05:12 | RequestId: 0HLQGFKUF6QKG:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 182
+
+12:05:17 | RequestId: 0HLQGFKUF6QKG:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 903
+
+12:05:35 | RequestId: 0HLQGFKUF6QKG:00000004 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 233
+
+12:05:55 | RequestId: 0HLQGFLB88DQF:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 168
+
+12:05:55 | RequestId: 0HLQGFLB88DQF:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 182
+
+12:06:47 | RequestId: 0HLQGFLB88DQF:00000003 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 1048
+
+12:06:54 | RequestId: 0HLQGFLB88DQF:00000004 | Status: 200
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d452-47b6-034f-08d750744195","title":"nedw","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 58
+
+12:06:58 | RequestId: 0HLQGFLB88DQF:00000005 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 41
+
+12:07:22 | RequestId: 0HLQGFLB88DQF:00000006 | Status: 404
+	Query: PUT /api/documents
+	Body: {"guid":"d6707021-d451-47b6-034f-08d750744195","title":"TEST_DOCUMENT","documentName":"TEST"}
+	User: 
+	Ip: ::1
+	Elapsed: 17
+
+13:48:52 | RequestId: 0HLQGHES0BOFB:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 212
+
+13:48:53 | RequestId: 0HLQGHES0BOFB:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 185
+
+13:49:37 | RequestId: 0HLQGHF9HQ04A:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+13:49:37 | RequestId: 0HLQGHF9HQ04A:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 184
+
+13:51:21 | RequestId: 0HLQGHG8K79CB:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 173
+
+13:51:22 | RequestId: 0HLQGHG8K79CB:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 187
+
+13:51:51 | RequestId: 0HLQGHGHJP88R:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 202
+
+13:51:52 | RequestId: 0HLQGHGHJP88R:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 179
+
+13:52:01 | RequestId: 0HLQGHGHJP88R:00000003 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4220
+
+13:52:23 | RequestId: 0HLQGHGQPDA3C:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 168
+
+13:52:23 | RequestId: 0HLQGHGQPDA3C:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 180
+
+13:52:54 | RequestId: 0HLQGHH47K0VR:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 160
+
+13:52:55 | RequestId: 0HLQGHH47K0VR:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 186
+
+13:53:00 | RequestId: 0HLQGHH47K0VR:00000003 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 956
+
+13:53:11 | RequestId: 0HLQGHH47K0VR:00000004 | Status: 200
+	Query: GET /api/roles/87ad07ee-edd7-4da6-a871-4dc45984c113
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 170
+
+13:58:42 | RequestId: 0HLQGHKBSC6DC:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 218
+
+13:58:43 | RequestId: 0HLQGHKBSC6DC:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 187
+
+13:58:58 | RequestId: 0HLQGHKBSC6DC:00000003 | Status: 400
+	Query: POST /api/roles
+	Body: user
+	User: 
+	Ip: ::1
+	Elapsed: 3642
+
+14:06:26 | RequestId: 0HLQGHOM7HGCB:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 174
+
+14:06:26 | RequestId: 0HLQGHOM7HGCB:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 181
+
+14:06:32 | RequestId: 0HLQGHOM7HGCB:00000003 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 996
+
+14:06:55 | RequestId: 0HLQGHOM7HGCB:00000004 | Status: 400
+	Query: POST /api/roles
+	Body: kj
+	User: 
+	Ip: ::1
+	Elapsed: 65
+
+14:08:19 | RequestId: 0HLQGHPNQ5AHB:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 269
+
+14:08:19 | RequestId: 0HLQGHPNQ5AHB:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 177
+
+14:08:31 | RequestId: 0HLQGHPNQ5AHB:00000003 | Status: 200
+	Query: POST /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 5070
+
+14:08:41 | RequestId: 0HLQGHPNQ5AHB:00000004 | Status: 409
+	Query: POST /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3758
+
+14:08:49 | RequestId: 0HLQGHPNQ5AHB:00000005 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 20
+
+14:56:36 | RequestId: 0HLQGIKN6UN7N:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 190
+
+14:56:37 | RequestId: 0HLQGIKN6UN7N:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 191
+
+14:56:52 | RequestId: 0HLQGIKS4F09N:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 140
+
+14:56:52 | RequestId: 0HLQGIKS4F09N:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 171
+
+14:57:11 | RequestId: 0HLQGIL1U2KL8:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 151
+
+14:57:12 | RequestId: 0HLQGIL1U2KL8:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 182
+
+14:57:54 | RequestId: 0HLQGILEIBL18:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 144
+
+14:57:54 | RequestId: 0HLQGILEIBL18:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 178
+
+14:58:03 | RequestId: 0HLQGILEIBL18:00000003 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3170
+
+14:58:25 | RequestId: 0HLQGILEIBL18:00000004 | Status: 404
+	Query: DELETE /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 157
+
+14:58:30 | RequestId: 0HLQGILEIBL18:00000005 | Status: 200
+	Query: DELETE /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 96
+
+14:58:33 | RequestId: 0HLQGILEIBL18:00000006 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:58:51 | RequestId: 0HLQGILEIBL18:00000007 | Status: 200
+	Query: GET /api/roles/87ad07ee-edd7-4da6-a871-4dc45984c113
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 30
+
+14:58:56 | RequestId: 0HLQGILEIBL18:00000008 | Status: 404
+	Query: GET /api/roles/87ad07ee-1dd7-4da6-a871-4dc45984c113
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 6
+
+15:09:11 | RequestId: 0HLQGIROAB4OO:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 153
+
+15:09:11 | RequestId: 0HLQGIROAB4OO:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 181
+
+15:22:15 | RequestId: 0HLQGJ320MCPN:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 167
+
+15:22:15 | RequestId: 0HLQGJ320MCPN:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 188
+
+15:22:41 | RequestId: 0HLQGJ39K5H6N:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 173
+
+15:22:41 | RequestId: 0HLQGJ39K5H6N:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 184
+
+15:23:20 | RequestId: 0HLQGJ3L9MBE8:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 157
+
+15:23:20 | RequestId: 0HLQGJ3L9MBE8:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 190
+
+15:23:36 | RequestId: 0HLQGJ3Q49877:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 161
+
+15:23:36 | RequestId: 0HLQGJ3Q49877:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 176
+
+15:24:05 | RequestId: 0HLQGJ42KUQV7:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 164
+
+15:24:05 | RequestId: 0HLQGJ42KUQV7:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 185
+
+15:27:31 | RequestId: 0HLQGJ5VUFMFN:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 272
+
+15:27:31 | RequestId: 0HLQGJ5VUFMFN:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 342
+
+15:33:18 | RequestId: 0HLQGJ97LNGNN:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 169
+
+15:33:19 | RequestId: 0HLQGJ97LNGNN:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 177
+
+15:33:29 | RequestId: 0HLQGJ97LNGNN:00000003 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3911
+
+15:33:40 | RequestId: 0HLQGJ97LNGNN:00000004 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 86
+
+15:34:12 | RequestId: 0HLQGJ97LNGNN:00000005 | Status: 200
+	Query: GET /api/roles/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 322
+
+15:42:18 | RequestId: 0HLQGJE8H6BD5:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 176
+
+15:42:18 | RequestId: 0HLQGJE8H6BD5:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 182
+
+15:42:36 | RequestId: 0HLQGJE8H6BD5:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3318
+
+15:42:48 | RequestId: 0HLQGJE8H6BD5:00000004 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 214
+
+15:43:18 | RequestId: 0HLQGJE8H6BD5:00000005 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 9
+
+15:43:28 | RequestId: 0HLQGJE8H6BD5:00000006 | Status: 200
+	Query: GET /api/roles/87ad07ee-edd7-4da6-a871-4dc45984c113
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 27
+
+15:47:51 | RequestId: 0HLQGJHBMLIP8:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 162
+
+15:47:51 | RequestId: 0HLQGJHBMLIP8:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 177
+
+15:51:49 | RequestId: 0HLQGJHBMLIP8:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3371
+
+15:52:04 | RequestId: 0HLQGJHBMLIP8:00000004 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 277
+
+15:53:25 | RequestId: 0HLQGJHBMLIP8:00000005 | Status: 200
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: ["ADMIN"]
+	User: 
+	Ip: ::1
+	Elapsed: 281
+
+15:53:36 | RequestId: 0HLQGJHBMLIP8:00000006 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 7
+
+15:54:12 | RequestId: 0HLQGJHBMLIP8:00000007 | Status: 200
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: ["CUSTOMER","ADMIN"]
+	User: 
+	Ip: ::1
+	Elapsed: 53
+
+15:54:19 | RequestId: 0HLQGJHBMLIP8:00000008 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 7
+
+15:54:27 | RequestId: 0HLQGJHBMLIP8:00000009 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 6
+
+15:54:41 | RequestId: 0HLQGJHBMLIP8:0000000A | Status: 500
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: ["string"]
+	User: 
+	Ip: ::1
+	Elapsed: 156
+
+15:54:51 | RequestId: 0HLQGJHBMLIP8:0000000B | Status: 200
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: ["ADMIN"]
+	User: 
+	Ip: ::1
+	Elapsed: 27
+
+16:02:57 | RequestId: 0HLQGJPPLUHP6:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 183
+
+16:02:57 | RequestId: 0HLQGJPPLUHP6:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 182
+
+16:05:20 | RequestId: 0HLQGJPPLUHP6:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3546
+
+16:05:48 | RequestId: 0HLQGJPPLUHP6:00000004 | Status: 200
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: []
+	User: 
+	Ip: ::1
+	Elapsed: 464
+
+16:06:17 | RequestId: 0HLQGJPPLUHP6:00000005 | Status: 404
+	Query: GET /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 27
+
+16:06:38 | RequestId: 0HLQGJPPLUHP6:00000006 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 32
+
+16:11:34 | RequestId: 0HLQGJUJQ4O65:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 199
+
+16:11:34 | RequestId: 0HLQGJUJQ4O65:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 180
+
+16:11:54 | RequestId: 0HLQGJUJQ4O65:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3577
+
+16:12:06 | RequestId: 0HLQGJUJQ4O65:00000004 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 266
+
+16:12:36 | RequestId: 0HLQGJUJQ4O65:00000005 | Status: 200
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: ["customer","admin"]
+	User: 
+	Ip: ::1
+	Elapsed: 243
+
+16:12:44 | RequestId: 0HLQGJUJQ4O65:00000006 | Status: 200
+	Query: GET /api/users/7979c826-18ec-e911-98db-94de8061e487/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 10
+
+16:14:38 | RequestId: 0HLQGK0AOK3P4:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 145
+
+16:14:39 | RequestId: 0HLQGK0AOK3P4:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+16:15:38 | RequestId: 0HLQGK0AOK3P4:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 989
+
+16:15:48 | RequestId: 0HLQGK0AOK3P4:00000004 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 41
+
+16:15:58 | RequestId: 0HLQGK0AOK3P4:00000005 | Status: 200
+	Query: POST /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 242
+
+16:16:01 | RequestId: 0HLQGK0AOK3P4:00000006 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4
+
+16:16:19 | RequestId: 0HLQGK0AOK3P4:00000007 | Status: 404
+	Query: DELETE /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 18
+
+16:16:22 | RequestId: 0HLQGK0AOK3P4:00000008 | Status: 200
+	Query: DELETE /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 36
+
+16:16:25 | RequestId: 0HLQGK0AOK3P4:00000009 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+16:17:54 | RequestId: 0HLQGK0AOK3P4:0000000A | Status: 200
+	Query: GET /api/roles/87ad07ee-edd7-4da6-a871-4dc45984c113
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 48
+
+16:18:30 | RequestId: 0HLQGK0AOK3P4:0000000B | Status: 404
+	Query: POST /api/roles/87ad07ee-edd7-4da6-a871-4dc45984c113
+	Body: ["asd"]
+	User: 
+	Ip: ::1
+	Elapsed: 40
+
+16:18:42 | RequestId: 0HLQGK0AOK3P4:0000000C | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+16:19:06 | RequestId: 0HLQGK0AOK3P4:0000000D | Status: 500
+	Query: POST /api/roles/7979c826-18ec-e911-98db-94de8061e487
+	Body: ["string"]
+	User: 
+	Ip: ::1
+	Elapsed: 248
+
+16:22:55 | RequestId: 0HLQGK4UUMKEL:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 187
+
+16:22:56 | RequestId: 0HLQGK4UUMKEL:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 175
+
+16:24:02 | RequestId: 0HLQGK5IO50PM:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 276
+
+16:24:02 | RequestId: 0HLQGK5IO50PM:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 182
+
+16:24:23 | RequestId: 0HLQGK5IO50PM:00000003 | Status: 200
+	Query: GET /api/roles
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3088
+
+16:29:02 | RequestId: 0HLQGK8C2S6P6:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 137
+
+16:29:02 | RequestId: 0HLQGK8C2S6P6:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+16:30:12 | RequestId: 0HLQGK910JPAL:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 141
+
+16:30:12 | RequestId: 0HLQGK910JPAL:00000002 | Status: 500
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 193
+
+16:30:25 | RequestId: 0HLQGK94R9IAK:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 143
+
+16:30:25 | RequestId: 0HLQGK94R9IAK:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 174
+
+16:31:13 | RequestId: 0HLQGK9J60QL5:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 147
+
+16:31:13 | RequestId: 0HLQGK9J60QL5:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172

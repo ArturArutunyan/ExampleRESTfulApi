@@ -1,0 +1,693 @@
+
+13:31:09 | RequestId: 0HLQE5MVPG60Q:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 248
+
+13:31:10 | RequestId: 0HLQE5MVPG60Q:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 226
+
+13:31:16 | RequestId: 0HLQE5MVPG60Q:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 932
+
+13:33:27 | RequestId: 0HLQE5O8NUMA9:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 154
+
+13:33:27 | RequestId: 0HLQE5O8NUMA9:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 187
+
+13:33:34 | RequestId: 0HLQE5O8NUMA9:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1035
+
+14:00:09 | RequestId: 0HLQE6768J3BQ:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 174
+
+14:00:10 | RequestId: 0HLQE6768J3BQ:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 172
+
+14:00:18 | RequestId: 0HLQE6768J3BQ:00000003 | Status: 200
+	Query: GET /api/documents
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4026
+
+14:12:43 | RequestId: 0HLQE6E6NUUR8:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 331
+
+14:12:43 | RequestId: 0HLQE6E6NUUR8:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 183
+
+14:12:54 | RequestId: 0HLQE6E6NUUR8:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 818
+
+14:13:19 | RequestId: 0HLQE6E6NUUR8:00000004 | Status: 200
+	Query: POST /register
+	Body: {"email":"admin","password":"login"}
+	User: 
+	Ip: ::1
+	Elapsed: 133
+
+14:13:27 | RequestId: 0HLQE6E6NUUR8:00000005 | Status: 200
+	Query: POST /register
+	Body: {"emaidl":"admin","password":"login"}
+	User: 
+	Ip: ::1
+	Elapsed: 6
+
+14:13:29 | RequestId: 0HLQE6E6NUUR8:00000006 | Status: 200
+	Query: POST /register
+	Body: {"emaidl":"admin","password":"login"}
+	User: 
+	Ip: ::1
+	Elapsed: 7
+
+14:13:35 | RequestId: 0HLQE6E6NUUR8:00000007 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 5
+
+14:13:37 | RequestId: 0HLQE6E6NUUR8:00000008 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:13:38 | RequestId: 0HLQE6E6NUUR8:00000009 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4
+
+14:13:39 | RequestId: 0HLQE6E6NUUR8:0000000A | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:13:40 | RequestId: 0HLQE6E6NUUR8:0000000B | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:13:52 | RequestId: 0HLQE6E6NUUR8:0000000C | Status: 200
+	Query: POST /register
+	Body: {"email":"admin","password":"111111"}
+	User: 
+	Ip: ::1
+	Elapsed: 391
+
+14:14:01 | RequestId: 0HLQE6E6NUUR8:0000000D | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 9
+
+14:14:17 | RequestId: 0HLQE6E6NUUR8:0000000E | Status: 200
+	Query: GET /api/users/b668e5d2-0fec-e911-98db-94de8061e487
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 132
+
+14:14:22 | RequestId: 0HLQE6E6NUUR8:0000000F | Status: 204
+	Query: GET /api/users/b668e5d2-0fec-e911-18db-94de8061e487
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 5
+
+14:17:31 | RequestId: 0HLQE6E6NUUR8:00000010 | Status: 400
+	Query: POST /api/users
+	Body: {"id":"","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:20.765Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 121
+
+14:17:38 | RequestId: 0HLQE6E6NUUR8:00000011 | Status: 400
+	Query: POST /api/users
+	Body: {"id":"8","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:20.765Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 4
+
+14:17:42 | RequestId: 0HLQE6E6NUUR8:00000012 | Status: 201
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:41.805Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 72
+
+14:18:00 | RequestId: 0HLQE6E6NUUR8:00000013 | Status: 400
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-517-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:41.805Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:18:11 | RequestId: 0HLQE6E6NUUR8:00000014 | Status: 400
+	Query: POST /api/users
+	Body: {"id":"3fa835f64-517-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:41.805Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 5
+
+14:18:28 | RequestId: 0HLQE6E6NUUR8:00000015 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 31
+
+14:18:42 | RequestId: 0HLQE6E6NUUR8:00000016 | Status: 400
+	Query: POST /api/users
+	Body: {"id":"3fa835f64-517-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:41.805Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 15
+
+14:18:52 | RequestId: 0HLQE6E6NUUR8:00000017 | Status: 409
+	Query: POST /api/users
+	Body: {"id":"e96f7d92-3e27-4710-bf7c-d5afb8607be4","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:41.805Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 10
+
+14:19:14 | RequestId: 0HLQE6E6NUUR8:00000018 | Status: 201
+	Query: POST /api/users
+	Body: {"id":"e91f7d92-3e27-4710-bf7c-d5afb8607be4","userName":"admin","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:17:41.805Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 16
+
+14:19:17 | RequestId: 0HLQE6E6NUUR8:00000019 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:19:24 | RequestId: 0HLQE6E6NUUR8:0000001A | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:20:09 | RequestId: 0HLQE6E6NUUR8:0000001B | Status: 409
+	Query: POST /api/users
+	Body: {"id":"e96f7d92-3e27-4710-bf7c-d5afb8607be4","userName":"admin","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:19:57.798Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 7
+
+14:20:18 | RequestId: 0HLQE6E6NUUR8:0000001C | Status: 201
+	Query: POST /api/users
+	Body: {"id":"e96f7d92-3e27-4710-bf7c-d5afb8607be1","userName":"admin","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T10:19:57.798Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 9
+
+14:20:27 | RequestId: 0HLQE6E6NUUR8:0000001D | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:20:28 | RequestId: 0HLQE6E6NUUR8:0000001E | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:24:11 | RequestId: 0HLQE6KJQ3BOA:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 160
+
+14:24:11 | RequestId: 0HLQE6KJQ3BOA:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 190
+
+14:24:20 | RequestId: 0HLQE6KJQ3BOA:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1019
+
+14:24:41 | RequestId: 0HLQE6KJQ3BOA:00000004 | Status: 200
+	Query: POST /register
+	Body: {"email":"admin","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 254
+
+14:24:47 | RequestId: 0HLQE6KJQ3BOA:00000005 | Status: 200
+	Query: POST /register
+	Body: {"email":"admin","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 38
+
+14:24:53 | RequestId: 0HLQE6KJQ3BOA:00000006 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 5
+
+14:25:03 | RequestId: 0HLQE6KJQ3BOA:00000007 | Status: 200
+	Query: POST /register
+	Body: {"email":"admin","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 32
+
+14:25:07 | RequestId: 0HLQE6KJQ3BOA:00000008 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:25:08 | RequestId: 0HLQE6KJQ3BOA:00000009 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:25:14 | RequestId: 0HLQE6KJQ3BOA:0000000A | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4
+
+14:25:15 | RequestId: 0HLQE6KJQ3BOA:0000000B | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+14:26:04 | RequestId: 0HLQE6LLPE989:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 188
+
+14:26:05 | RequestId: 0HLQE6LLPE989:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 175
+
+14:26:15 | RequestId: 0HLQE6LLPE989:00000003 | Status: 409
+	Query: POST /register
+	Body: {"email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 1209
+
+14:26:26 | RequestId: 0HLQE6LLPE989:00000004 | Status: 200
+	Query: POST /register
+	Body: {"email":"strin1g","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 244
+
+14:26:36 | RequestId: 0HLQE6LLPE989:00000005 | Status: 409
+	Query: POST /register
+	Body: {"email":"admin","password":"admin"}
+	User: 
+	Ip: ::1
+	Elapsed: 7
+
+14:40:40 | RequestId: 0HLQE6TQNB3BE:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 203
+
+14:40:40 | RequestId: 0HLQE6TQNB3BE:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 174
+
+14:41:50 | RequestId: 0HLQE6TQNB3BE:00000003 | Status: 409
+	Query: POST /register
+	Body: {"login":"string","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 4243
+
+14:42:00 | RequestId: 0HLQE6TQNB3BE:00000004 | Status: 409
+	Query: POST /register
+	Body: {"login":"string","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 68
+
+14:42:04 | RequestId: 0HLQE6TQNB3BE:00000005 | Status: 409
+	Query: POST /register
+	Body: {"login":"strin23g","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 32
+
+14:42:06 | RequestId: 0HLQE6TQNB3BE:00000006 | Status: 409
+	Query: POST /register
+	Body: {"login":"strin23g","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 30
+
+14:42:08 | RequestId: 0HLQE6TQNB3BE:00000007 | Status: 200
+	Query: POST /register
+	Body: {"login":"strin23g","email":"stri23ng","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 275
+
+15:02:00 | RequestId: 0HLQE79O6EU5T:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 164
+
+15:02:01 | RequestId: 0HLQE79O6EU5T:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 176
+
+15:13:12 | RequestId: 0HLQE7G0GI7FT:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 149
+
+15:13:13 | RequestId: 0HLQE7G0GI7FT:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 185
+
+15:13:29 | RequestId: 0HLQE7G0GI7FT:00000003 | Status: 200
+	Query: POST /register
+	Body: {"login":"string","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 1449
+
+15:13:32 | RequestId: 0HLQE7G0GI7FT:00000004 | Status: 409
+	Query: POST /register
+	Body: {"login":"string","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 86
+
+15:13:38 | RequestId: 0HLQE7G0GI7FT:00000005 | Status: 409
+	Query: POST /register
+	Body: {"login":"string1","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 30
+
+15:13:46 | RequestId: 0HLQE7G0GI7FT:00000006 | Status: 200
+	Query: POST /register
+	Body: {"login":"string","email":"string1","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 52
+
+15:13:59 | RequestId: 0HLQE7G0GI7FT:00000007 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 28
+
+15:14:22 | RequestId: 0HLQE7G0GI7FT:00000008 | Status: 409
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:14:17.113Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 56
+
+15:14:29 | RequestId: 0HLQE7G0GI7FT:00000009 | Status: 409
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"strin123g","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:14:17.113Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 32
+
+15:14:42 | RequestId: 0HLQE7G0GI7FT:0000000A | Status: 201
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"stri123ng","normalizedUserName":"string","email":"strin123g","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:14:17.113Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 42
+
+15:14:50 | RequestId: 0HLQE7G0GI7FT:0000000B | Status: 409
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"stri123ng","normalizedUserName":"string","email":"strin123g","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:14:17.113Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 32
+
+15:14:59 | RequestId: 0HLQE7G0GI7FT:0000000C | Status: 201
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"str123i123ng","normalizedUserName":"string","email":"strin123g","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:14:17.113Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 45
+
+15:15:03 | RequestId: 0HLQE7G0GI7FT:0000000D | Status: 409
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"str123i123ng","normalizedUserName":"string","email":"strin123g","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:14:17.113Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 31
+
+15:20:52 | RequestId: 0HLQE7K9DI62C:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 186
+
+15:20:52 | RequestId: 0HLQE7K9DI62C:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 179
+
+15:21:12 | RequestId: 0HLQE7K9DI62C:00000003 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 4140
+
+15:22:01 | RequestId: 0HLQE7K9DI62C:00000004 | Status: 409
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"string","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:21:19.720Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 333
+
+15:22:08 | RequestId: 0HLQE7K9DI62C:00000005 | Status: 201
+	Query: POST /api/users
+	Body: {"id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","userName":"sg","normalizedUserName":"string","email":"string","normalizedEmail":"string","emailConfirmed":true,"passwordHash":"string","securityStamp":"string","concurrencyStamp":"string","phoneNumber":"string","phoneNumberConfirmed":true,"twoFactorEnabled":true,"lockoutEnd":"2019-10-11T11:21:19.720Z","lockoutEnabled":true,"accessFailedCount":0}
+	User: 
+	Ip: ::1
+	Elapsed: 287
+
+15:22:58 | RequestId: 0HLQE7K9DI62C:00000006 | Status: 409
+	Query: POST /register
+	Body: {"login":"asd","email":"string","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 73
+
+15:23:09 | RequestId: 0HLQE7K9DI62C:00000007 | Status: 200
+	Query: POST /register
+	Body: {"login":"asd","email":"ssg","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 67
+
+15:23:19 | RequestId: 0HLQE7K9DI62C:00000008 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+15:24:02 | RequestId: 0HLQE7K9DI62C:00000009 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 3
+
+15:24:15 | RequestId: 0HLQE7K9DI62C:0000000A | Status: 401
+	Query: POST /login
+	Body: {"username":"ssg","password":"111111"}
+	User: 
+	Ip: ::1
+	Elapsed: 50
+
+15:24:23 | RequestId: 0HLQE7K9DI62C:0000000B | Status: 200
+	Query: POST /login
+	Body: {"username":"ssg","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 113
+
+15:24:38 | RequestId: 0HLQE7K9DI62C:0000000C | Status: 400
+	Query: POST /api/users/494a9a80-19ec-e911-98db-94de8061e487/password
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 66
+
+15:25:01 | RequestId: 0HLQE7K9DI62C:0000000D | Status: 400
+	Query: POST /api/users/494a9a80-19ec-e911-98db-94de8061e487/password
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 0
+
+15:25:30 | RequestId: 0HLQE7K9DI62C:0000000E | Status: 400
+	Query: POST /api/users/f9fee65b-19ec-e911-98db-94de8061e487/password
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 0
+
+15:26:52 | RequestId: 0HLQE7NKQ959C:00000001 | Status: 200
+	Query: GET /swagger/index.html
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 173
+
+15:26:52 | RequestId: 0HLQE7NKQ959C:00000002 | Status: 200
+	Query: GET /swagger/v1/swagger.json
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 174
+
+15:27:00 | RequestId: 0HLQE7NKQ959C:00000003 | Status: 200
+	Query: POST /api/users/f9fee65b-19ec-e911-98db-94de8061e487/password
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 1194
+
+15:27:13 | RequestId: 0HLQE7NKQ959C:00000004 | Status: 200
+	Query: GET /api/users
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 59
+
+15:27:53 | RequestId: 0HLQE7NKQ959C:00000005 | Status: 401
+	Query: POST /login
+	Body: {"username":"ssg","password":"111111"}
+	User: 
+	Ip: ::1
+	Elapsed: 83
+
+15:28:04 | RequestId: 0HLQE7NKQ959C:00000006 | Status: 200
+	Query: POST /login
+	Body: {"username":"ssg","password":"string"}
+	User: 
+	Ip: ::1
+	Elapsed: 50
+
+15:28:30 | RequestId: 0HLQE7NKQ959C:00000007 | Status: 200
+	Query: POST /api/users/494a9a80-19ec-e911-98db-94de8061e487/password
+	Body: 
+	User: 
+	Ip: ::1
+	Elapsed: 35
+
+15:28:46 | RequestId: 0HLQE7NKQ959C:00000008 | Status: 200
+	Query: POST /login
+	Body: {"username":"ssg","password":"111111"}
+	User: 
+	Ip: ::1
+	Elapsed: 29

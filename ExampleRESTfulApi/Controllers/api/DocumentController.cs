@@ -18,36 +18,59 @@ namespace ExampleRESTfulApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<ContractDocument>> Get()
-        {
-            return await _dataManager.ContractDocuments.GetAll();
-        }
-
+        public async Task<IEnumerable<ContractDocument>> Get() => await _dataManager.ContractDocuments.GetAll();
         [HttpGet("{guid}")]
-        public async Task<ContractDocument> Get(Guid guid)
+        public async Task<IActionResult> Get(Guid guid)
         {
-            return await _dataManager.ContractDocuments.GetWhere(guid);
+            var document = await _dataManager.ContractDocuments.GetWhere(c => c.Guid == guid);
+
+            if (document != null)
+                return Ok(document);
+            return NotFound();
         }
 
         /// <remarks>
         /// <b>Данные в примере являются валидными</b>
         /// </remarks>
         [HttpPost]
-        public async Task Create([FromBody]ContractDocument contractDocument)
+        public async Task<IActionResult> Create([FromBody] ContractDocument contractDocument)
         {
-            await _dataManager.ContractDocuments.Create(contractDocument);
+            var document = await _dataManager.ContractDocuments.GetWhere(c => c.Guid == contractDocument.Guid);
+
+            if (document == null)
+            {
+                await _dataManager.ContractDocuments.Create(contractDocument);
+                document = await _dataManager.ContractDocuments.GetWhere(c => c.Title == contractDocument.Title); // возвращаем новый обьект со сгенерированным Guid
+                return Created("api/documents/", document);                                                    
+            }
+            return Conflict();
+
         }
 
         [HttpPut]
-        public async Task Update([FromBody]ContractDocument contractDocument)
+        public async Task<IActionResult> Update([FromBody] ContractDocument contractDocument)
         {
-            await _dataManager.ContractDocuments.Update(contractDocument);
+            var document = await _dataManager.ContractDocuments.GetWhere(c => c.Guid == contractDocument.Guid);
+
+            if (document != null)
+            {
+                await _dataManager.ContractDocuments.Update(contractDocument);
+                return Ok();
+            }
+            return NotFound();
         }
 
         [HttpDelete("{guid}")]
-        public async Task Delete(Guid guid)
+        public async Task<IActionResult> Delete(Guid guid)
         {
-            await _dataManager.ContractDocuments.Delete(guid);
+            var document = await _dataManager.ContractDocuments.GetWhere(c => c.Guid == guid);
+
+            if (document != null)
+            {
+                await _dataManager.ContractDocuments.Delete(document);
+                return Ok();
+            }
+            return NotFound();
         }
     }
 }

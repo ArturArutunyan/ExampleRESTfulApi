@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JwtAuthentication.Controllers
 {
-    [Authorize]
+    [Authorize("Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
