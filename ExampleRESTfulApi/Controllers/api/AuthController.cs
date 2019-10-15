@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -46,7 +47,6 @@ namespace JwtAuthentication.Controllers
             
         }
 
-
         /// <remarks>
         /// <b>Данные в примере являются валидными</b>
         /// </remarks>
@@ -55,11 +55,11 @@ namespace JwtAuthentication.Controllers
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             var user = await _userManager.FindByNameAsync(model.Username);
+
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {
-                var claim = new[] {
-                    new Claim(JwtRegisteredClaimNames.Sub, user.UserName)
-                };
+                var identity = await GetIdentity(user);
+
                 var signinKey = new SymmetricSecurityKey(
                   Encoding.UTF8.GetBytes(_configuration["Jwt:SigningKey"]));
 
@@ -69,6 +69,7 @@ namespace JwtAuthentication.Controllers
                   issuer: _configuration["Jwt:Site"],
                   audience: _configuration["Jwt:Site"],
                   expires: DateTime.UtcNow.AddMinutes(expiryInMinutes),
+                  claims: identity.Claims,
                   signingCredentials: new SigningCredentials(signinKey, SecurityAlgorithms.HmacSha256)
                 );
 
@@ -80,6 +81,25 @@ namespace JwtAuthentication.Controllers
                   });
             }
             return Unauthorized();
+        }
+
+
+        // Возвращает обьект ClaimsIdentity в котором находиться список Claims с ролями
+        private async Task<ClaimsIdentity> GetIdentity(ApplicationUser user)
+        {
+            var roles = await _userManager.GetRolesAsync(user); // Берем все роли данного пользователя
+            var claims = new List<Claim>();
+
+            // Помещаем их в список claims, это нужно для авторизации по ролям
+            foreach (var role in roles)
+            {
+               claims.Add(new Claim(ClaimsIdentity.DefaultRoleClaimType, role)); 
+            }     
+
+            ClaimsIdentity claimsIdentity =
+                new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,
+                    ClaimsIdentity.DefaultRoleClaimType);
+                return claimsIdentity;
         }
     }
 

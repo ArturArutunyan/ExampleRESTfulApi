@@ -1,19 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JwtAuthentication.Controllers
 {
-    [Authorize("Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IEnumerable<Claim> Get()
         {
-            return new string[] { "value1", "value2" };
+            return User.Claims;
         }
 
         // GET api/values/5

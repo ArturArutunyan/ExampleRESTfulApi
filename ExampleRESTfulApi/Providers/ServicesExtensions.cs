@@ -43,7 +43,8 @@ namespace ExampleRESTfulApi.Providers
                 options.SaveToken = true;
                 options.RequireHttpsMetadata = true;
                 options.TokenValidationParameters = new TokenValidationParameters()
-                {
+                {            
+                    ValidateIssuerSigningKey = true,
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidAudience = configuration["Jwt:Site"],
