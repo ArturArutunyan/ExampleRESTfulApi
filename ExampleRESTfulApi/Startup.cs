@@ -1,6 +1,4 @@
-﻿using BLL;
-using BLL.Interfaces;
-using DAL.EF;
+﻿
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using ExampleRESTfulApi.Providers;
 using Microsoft.Extensions.Logging;
 using ExampleRESTfulApi.Middlewares;
+using DAL.DAO.EF;
+using BLL.Providers;
 
 namespace TitulWebCards
 {
@@ -39,7 +39,7 @@ namespace TitulWebCards
           
             services.AddAuthorizationServices(Configuration); // добавление сервисов авторизации и аутентификации
 
-            services.AddScoped<IDataManager, DataManager>();
+            services.AddBLLServices();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             

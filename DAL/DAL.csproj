@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="EF\Migrations\20190918103124_initbd.cs" />
-    <Compile Remove="EF\Migrations\20190918112055_initbd.cs" />
-    <Compile Remove="EF\Migrations\20190918112811_initbd.cs" />
-    <Compile Remove="EF\Migrations\20190918113018_initbd.cs" />
+    <Compile Remove="DAO\EF\Migrations\20190918103124_initbd.cs" />
+    <Compile Remove="DAO\EF\Migrations\20190918112055_initbd.cs" />
+    <Compile Remove="DAO\EF\Migrations\20190918112811_initbd.cs" />
+    <Compile Remove="DAO\EF\Migrations\20190918113018_initbd.cs" />
   </ItemGroup>
 
   <ItemGroup>

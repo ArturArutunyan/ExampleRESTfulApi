@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using DAL.Models;
-using Microsoft.AspNetCore.Identity;
+using BLL.Entities.Templates.Identity;
+using BLL.Managers.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExampleRESTfulApi.Controllers.api
@@ -12,69 +10,53 @@ namespace ExampleRESTfulApi.Controllers.api
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly RoleManager<ApplicationRole> _roleManager;
-        private readonly UserManager<ApplicationUser> _userManager;
-        public UsersController(RoleManager<ApplicationRole> roleManager, UserManager<ApplicationUser> userManager)
+        private readonly Users Users;
+        public UsersController(Users users)
         {
-            _roleManager = roleManager;
-            _userManager = userManager;
+            Users = users;
         }
 
         [HttpGet]
-        public IEnumerable<ApplicationUser> GetAll() => _userManager.Users.ToList();
+        public IActionResult GetAll() => Ok(Users.GetAllAsync());
 
         [HttpGet("{guid}")]
         public async Task<IActionResult> Get(Guid guid)
         {
-            var user = await _userManager.FindByIdAsync(guid.ToString());
+            var user = await Users.GetAsyncById(guid);
 
             if (user != null)
-                Ok(user);
+                return Ok(user);
             return NotFound();
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] ApplicationUser model)
+        public async Task<IActionResult> CreateUser([FromBody] User user)
         {
-            var user = new ApplicationUser
-            {
-                Email = model.Email,
-                UserName = model.UserName,
-                SecurityStamp = Guid.NewGuid().ToString()
-            };
+            var resultCreated = await Users.CreateAsync(user);
 
-            var result = await _userManager.CreateAsync(user, "111111"); // cтавим дефолтный пароль
-
-            if (result.Succeeded)
-            {
-                await _userManager.AddToRoleAsync(user, "Customer");
-                return Created("api/users", model);
-            }
-            return Conflict();
+            if (resultCreated)
+                return Created("api/users", user);
+            return Conflict(); 
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateUser([FromBody] IdentityUser modelUser)
+        public async Task<IActionResult> UpdateUser([FromBody] User model)
         {
-            var user = await _userManager.FindByIdAsync(modelUser.Id);
-
-            if (user != null)
+            var user = await Users.UpdateAsync(model);
+            
+            if (user)
             {
-                user.UserName = modelUser.UserName;
-                user.Email = modelUser.Email;
-
-                await _userManager.UpdateAsync(user);
                 return Ok();
             }
             return NotFound();
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteUser([FromBody] ApplicationUser user)
+        public async Task<IActionResult> DeleteUser(Guid guid)
         {
-            var result = await _userManager.DeleteAsync(user);
+            var result = await Users.DeleteAsync(guid);
 
-            if (result.Succeeded)
+            if (result)
                 return Ok();
             return NotFound();
         }
@@ -89,14 +71,10 @@ namespace ExampleRESTfulApi.Controllers.api
         [Route("{guid}/password")]
         public async Task<IActionResult> ResetPassword(Guid guid)
         {
-            var user = await _userManager.FindByIdAsync(guid.ToString());
+            var user = await Users.ResetPasswordAsync(guid);
 
             if (user != null)
-            {
-                string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
-                await _userManager.ResetPasswordAsync(user, resetToken, "111111");
                 return Ok(user);
-            }
             return NotFound();
         }
 
@@ -108,21 +86,11 @@ namespace ExampleRESTfulApi.Controllers.api
         [HttpGet("{guid}/roles")]
         public async Task<IActionResult> GetAllUserRoles(Guid guid)
         {
-            var user = await _userManager.FindByIdAsync(guid.ToString());
+            var roles = await Users.GetAllUserRolesAsync(guid);
 
-            if (user != null)
+            if (roles != null)
             {
-                var userRoles = await _userManager.GetRolesAsync(user);
-
-                var allRoles = _roleManager.Roles.ToList();
-
-                var roles = new
-                {
-                    userRoles,
-                    allRoles
-                };
-
-                return Ok(roles);
+                return Ok(new { roles });
             }
             return NotFound();
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BLL.Interfaces;
-using DAL.Models;
+using DAL.Entities.Documents;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExampleRESTfulApi.Controllers

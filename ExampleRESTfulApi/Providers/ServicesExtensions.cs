@@ -1,5 +1,4 @@
-﻿using DAL.EF;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,7 +11,8 @@ using System;
 using System.Text;
 using Swashbuckle.AspNetCore.Filters;
 using ExampleRESTfulApi.Swagger.RequestExamples;
-using DAL.Models;
+using DAL.Entities.Identity;
+using DAL.DAO.EF;
 
 namespace ExampleRESTfulApi.Providers
 {

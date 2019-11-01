@@ -1,4 +1,4 @@
-﻿using DAL.Models;
+﻿using DAL.Entities.Documents;
 using Swashbuckle.AspNetCore.Filters;
 
 namespace ExampleRESTfulApi.Swagger.RequestExamples
